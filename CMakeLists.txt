@@ -4,6 +4,8 @@ project(sha256_literal)
 
 include(CBuildKit)
 
+option(USE_STATIC_LINKING "Use static linking for the runtime" ON)
+
 if (USE_STATIC_LINKING)
     if (MSVC)
         # MSVC specific static linking flag
